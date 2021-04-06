@@ -1,0 +1,122 @@
+$primarycolor: #005098;
+
+.hero-header {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: radial-gradient(#081266, #000421);
+}
+.hero-section {
+  padding: 0 5%;
+  h1 {
+    font-size: 50px;
+    color: #fff;
+    line-height: 2.5;
+  }
+  p {
+    color: #dadada;
+    line-height: 2.5;
+    font-weight: 600;
+  }
+}
+.a-cont {
+  max-width: 900px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 4rem;
+}
+.a-container {
+  max-width: 900px;
+  margin: 3rem auto;
+}
+.a-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  column-gap: 2rem;
+  .left {
+    p {
+      line-height: 2;
+    }
+  }
+}
+.m-s {
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 5rem;
+  h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+}
+.m-sect {
+  margin-top: 2rem;
+  h3 {
+    color: $primarycolor;
+    margin-bottom: 1rem;
+  }
+  p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.7rem;
+  }
+  .dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: $primarycolor;
+    margin-right: 10px;
+  }
+}
+.client {
+  max-width: 1000px;
+  margin: 5rem auto;
+  padding: 0 1rem;
+  h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+}
+.client-sect {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-rows: 100px;
+  gap: 2rem;
+}
+.c-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f3f3f3;
+  img {
+    width: auto;
+    max-width: 100px;
+    max-height: 70px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero-section {
+    h1 {
+      font-size: 40px;
+    }
+    p {
+      line-height: 2;
+    }
+  }
+  .client-sect {
+    grid-template-rows: 100px 100px 100px;
+  }
+}
+@media screen and (max-width: 869px) {
+  .client-sect {
+    grid-template-rows: 100px 100px;
+  }
+}
+@media screen and (max-width: 437px) {
+  .client-sect {
+    grid-template-rows: 100px 100px 100px;
+  }
+}
